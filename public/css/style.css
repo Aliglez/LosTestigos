@@ -4,6 +4,8 @@
  * Copyright 2011-2023 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono:wght@300&display=swap");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -11855,8 +11857,8 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-body {
-  background-color: black;
+h1, .h1 {
+  font-family: Roboto Mono;
 }
 
 /*# sourceMappingURL=style.css.map */
