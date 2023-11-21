@@ -1,0 +1,64 @@
+@import "./mixin.scss";
+
+.header{
+    width: 100%;
+    background-color: white;
+    padding: 1em;
+
+    @include flex ( row , wrap , space-between , center)
+}
+
+h4{
+    font-family: 'Tangerine', cursive;
+    font-size: 20px;
+    transform: rotate(-30deg);
+}
+.button{
+    display: none;
+    border-radius: 20%;
+    background-color: black;
+    color: white;
+
+    @include media() {
+        display: block;
+    }
+}
+.svg{
+    width: 2em;
+    height: 2em;
+}
+.nav{
+    
+
+    @include media() {
+        width: 100%;
+        display: none;
+
+        &.activo{
+            display: flex;
+            @include flex( column , nowrap , center ,center);
+        }
+}
+}
+.ul{
+   
+    @include flex ( row , wrap , flex-end , center);
+
+    @include media(){ flex-direction: column; }
+}
+
+.li{
+   
+    margin: 4.3em;
+    font-size: large;
+    list-style: none;
+    font-weight: 550;
+    
+    @include media(){margin: 1em 0;}
+}
+a{  
+    margin-bottom: 19em;
+    font-family: monospace;
+    text-decoration: none;
+    color: black;
+}

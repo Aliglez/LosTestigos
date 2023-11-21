@@ -11855,8 +11855,82 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-body {
+.header {
+  width: 100%;
+  background-color: white;
+  padding: 1em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h4, .h4 {
+  font-family: "Tangerine", cursive;
+  font-size: 20px;
+  transform: rotate(-30deg);
+}
+
+.button {
+  display: none;
+  border-radius: 20%;
   background-color: black;
+  color: white;
+}
+@media screen and (max-width: 480px) {
+  .button {
+    display: block;
+  }
+}
+
+.svg {
+  width: 2em;
+  height: 2em;
+}
+
+@media screen and (max-width: 480px) {
+  .nav {
+    width: 100%;
+    display: none;
+  }
+  .nav.activo {
+    display: flex;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .ul {
+    flex-direction: column;
+  }
+}
+
+.li {
+  margin: 4.3em;
+  font-size: large;
+  list-style: none;
+  font-weight: 550;
+}
+@media screen and (max-width: 480px) {
+  .li {
+    margin: 1em 0;
+  }
+}
+
+a {
+  margin-bottom: 19em;
+  font-family: monospace;
+  text-decoration: none;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
