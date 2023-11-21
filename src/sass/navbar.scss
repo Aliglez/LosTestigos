@@ -19,7 +19,7 @@ h4{
     background-color: black;
     color: white;
 
-    @include media() {
+    @include mobile() {
         display: block;
     }
 }
@@ -30,7 +30,7 @@ h4{
 .nav{
     
 
-    @include media() {
+    @include mobile() {
         width: 100%;
         display: none;
 
@@ -44,17 +44,17 @@ h4{
    
     @include flex ( row , wrap , flex-end , center);
 
-    @include media(){ flex-direction: column; }
+    @include mobile(){ flex-direction: column; }
 }
 
 .li{
    
-    margin: 4.3em;
+    margin: 2.3em;
     font-size: large;
     list-style: none;
     font-weight: 550;
     
-    @include media(){margin: 1em 0;}
+    @include mobile(){margin: 1em 0;}
 }
 a{  
     margin-bottom: 19em;
