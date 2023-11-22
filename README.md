@@ -1,5 +1,8 @@
 # LosTestigos
 
-# INSTALL SASS
-    - npm install -D sass
+# INSTALL 
+    - npm install   To install Sass and Bootstrap
+
+
+
     
