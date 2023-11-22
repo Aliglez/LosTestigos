@@ -1,64 +1,97 @@
 @import "./mixin.scss";
 
-.header{
+.header {
+  width: 100%;
+  background-color: white;
+  padding: 1em;
+
+  @include flex(row, wrap, space-between, center);
+}
+
+#logo_page {
+  height: 5rem;
+  width: 10rem;
+}
+
+.button {
+  display: none;
+  border-radius: 20%;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+
+  @include mobile() {
+    display: block;
+  }
+}
+
+.nav {
+    @include mobile() {
     width: 100%;
-    background-color: white;
-    padding: 1em;
+    // display: none;
+    opacity: 0;
+    height: 0vh;
+    pointer-events: none;
+    overflow: hidden;
+    transition: all 0.5 ease-in-out;
+    @include flex(column, nowrap, center, center);
 
-    @include flex ( row , wrap , space-between , center)
-}
-
-h4{
-    font-family: 'Tangerine', cursive;
-    font-size: 20px;
-    transform: rotate(-30deg);
-}
-.button{
-    display: none;
-    border-radius: 20%;
-    background-color: black;
-    color: white;
-
-    @include mobile() {
-        display: block;
+    &.activo {
+      // display: flex;
+      opacity: 1;
+      height: 50vh;
+      pointer-events: auto;
     }
-}
-.svg{
-    width: 2em;
-    height: 2em;
-}
-.nav{
-    
-
-    @include mobile() {
-        width: 100%;
-        display: none;
-
-        &.activo{
-            display: flex;
-            @include flex( column , nowrap , center ,center);
-        }
-}
-}
-.ul{
-   
-    @include flex ( row , wrap , flex-end , center);
-
-    @include mobile(){ flex-direction: column; }
+  }
 }
 
-.li{
-   
-    margin: 2.3em;
-    font-size: large;
-    list-style: none;
-    font-weight: 550;
-    
-    @include mobile(){margin: 1em 0;}
+.ul {
+  @include flex(row, wrap, flex-end, center);
+
+  @include mobile() {
+    flex-direction: column;
+  }
 }
-a{  
-    margin-bottom: 19em;
-    font-family: monospace;
-    text-decoration: none;
-    color: black;
+
+.li {
+  margin: 3em;
+  font-size: large;
+  list-style: none;
+  font-weight: 550;
+
+  @include mobile() {
+    margin: 1em 0;
+  }
+}
+a {
+  margin-bottom: 19em;
+  font-family: monospace;
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+
+.nav ul li a:hover::before {
+  content: "";
+  bottom: -5px;
+  right: 0;
+  width: 3rem;
+}
+.nav ul li a:hover::after {
+  content: "";
+  bottom: -10px;
+  left: 0;
+  width: 2rem;
+}
+.nav ul li a::before,
+.nav ul li a::after {
+  border-bottom: 3px solid rgb(23, 23, 180);
+  position: absolute;
+  translate: 0.2s;
+  border-radius: 10px;
+}
+
+#box {
+  padding: 5px;
+  padding-bottom: 1rem;
 }

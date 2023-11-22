@@ -11865,10 +11865,9 @@ textarea.form-control-lg {
   align-items: center;
 }
 
-h4, .h4 {
-  font-family: "Tangerine", cursive;
-  font-size: 20px;
-  transform: rotate(-30deg);
+#logo_page {
+  height: 5rem;
+  width: 10rem;
 }
 
 .button {
@@ -11876,6 +11875,7 @@ h4, .h4 {
   border-radius: 20%;
   background-color: black;
   color: white;
+  cursor: pointer;
 }
 @media screen and (max-width: 480px) {
   .button {
@@ -11883,22 +11883,23 @@ h4, .h4 {
   }
 }
 
-.svg {
-  width: 2em;
-  height: 2em;
-}
-
 @media screen and (max-width: 480px) {
   .nav {
     width: 100%;
-    display: none;
-  }
-  .nav.activo {
-    display: flex;
+    opacity: 0;
+    height: 0vh;
+    pointer-events: none;
+    overflow: hidden;
+    transition: all 0.5 ease-in-out;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+  }
+  .nav.activo {
+    opacity: 1;
+    height: 50vh;
+    pointer-events: auto;
   }
 }
 
@@ -11915,7 +11916,7 @@ h4, .h4 {
 }
 
 .li {
-  margin: 4.3em;
+  margin: 3em;
   font-size: large;
   list-style: none;
   font-weight: 550;
@@ -11931,6 +11932,34 @@ a {
   font-family: monospace;
   text-decoration: none;
   color: black;
+  position: relative;
+}
+
+.nav ul li a:hover::before {
+  content: "";
+  bottom: -5px;
+  right: 0;
+  width: 3rem;
+}
+
+.nav ul li a:hover::after {
+  content: "";
+  bottom: -10px;
+  left: 0;
+  width: 2rem;
+}
+
+.nav ul li a::before,
+.nav ul li a::after {
+  border-bottom: 3px solid rgb(23, 23, 180);
+  position: absolute;
+  translate: 0.2s;
+  border-radius: 10px;
+}
+
+#box {
+  padding: 5px;
+  padding-bottom: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
