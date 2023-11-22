@@ -31,6 +31,8 @@ main {
 .containText #generalText {
   text-align: justify;
   padding: 1 rem 1.5rem;
+  font-weight: bold;
+  margin-top: 1%;
 }
 
 /*!
