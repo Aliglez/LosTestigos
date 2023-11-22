@@ -3,15 +3,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono:wght@300&display=swap");
 #imgBanner {
   width: 100%;
+  margin: 10% auto;
   max-height: 1000px;
   object-fit: cover;
+  padding: 2% 10%;
 }
 
 .containText {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  font-family: Roboto Mono;
+  padding: 2% 10%;
+}
+.containText .titleText {
+  border-left: 0.5rem solid #FFE605;
+  padding: 1rem 2rem;
+  text-align: left;
+}
+.containText #generalText {
+  text-align: justify;
+  padding: 1 rem 1.5rem;
 }
 
 /*!
