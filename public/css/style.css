@@ -11922,21 +11922,21 @@ textarea.form-control-lg {
     font-size: small;
   }
 }
-.header .nav .activo ul li a:hover::before {
+.header .nav ul li a:hover::before {
   content: "";
   bottom: -5px;
   right: 0;
   width: 3rem;
 }
-.header .nav .activo ul li a:hover::after {
+.header .nav ul li a:hover::after {
   content: "";
   bottom: -10px;
   left: 0;
   width: 2rem;
 }
-.header .nav .activo ul li a::before,
-.header .nav .activo ul li a::after {
-  border-bottom: 4px greenyellow;
+.header .nav ul li a::before,
+.header .nav ul li a::after {
+  border-bottom: 3px solid rgb(23, 23, 180);
   position: absolute;
   translate: 0.2s;
   border-radius: 10px;

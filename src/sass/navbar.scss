@@ -62,21 +62,21 @@
       font-size: small;
     }
   }
-  .nav .activo ul li a:hover::before {
+  .nav ul li a:hover::before {
     content: "";
     bottom: -5px;
     right: 0;
     width: 3rem;
   }
-  .nav .activo ul li a:hover::after {
+  .nav ul li a:hover::after {
     content: "";
     bottom: -10px;
     left: 0;
     width: 2rem;
   }
-  .nav .activo ul li a::before,
-  .nav .activo ul li a::after {
-    border-bottom: 4px greenyellow;
+  .nav ul li a::before,
+  .nav ul li a::after {
+    border-bottom: 3px solid rgb(23, 23, 180);
     position: absolute;
     translate: 0.2s;
     border-radius: 10px;
