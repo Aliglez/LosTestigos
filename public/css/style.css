@@ -11858,107 +11858,104 @@ textarea.form-control-lg {
 .header {
   width: 100%;
   background-color: white;
-  padding: 1em;
+  font-family: monospace;
+  background-color: beige;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
-
-#logo_page {
-  height: 5rem;
-  width: 10rem;
+@media screen and (max-width: 480px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
 }
-
-.button {
+.header #logo_page {
+  width: 8rem;
+  height: 5rem;
+}
+.header .buton {
+  background-color: white;
   display: none;
-  border-radius: 20%;
-  background-color: black;
-  color: white;
   cursor: pointer;
 }
 @media screen and (max-width: 480px) {
-  .button {
+  .header .buton {
     display: block;
   }
 }
-
 @media screen and (max-width: 480px) {
-  .nav {
+  .header .nav {
     width: 100%;
-    opacity: 0;
-    height: 0vh;
-    pointer-events: none;
-    overflow: hidden;
-    transition: all 0.5 ease-in-out;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-  }
-  .nav.activo {
-    opacity: 1;
-    height: 50vh;
-    pointer-events: auto;
+    display: none;
   }
 }
-
-.ul {
+.header .nav.activo {
+  opacity: 1;
+  pointer-events: auto;
+}
+.header .ul {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
   align-items: center;
 }
 @media screen and (max-width: 480px) {
-  .ul {
+  .header .ul {
     flex-direction: column;
   }
 }
-
-.li {
-  margin: 3em;
-  font-size: large;
+.header .li {
+  margin: 2.7em;
   list-style: none;
-  font-weight: 550;
 }
 @media screen and (max-width: 480px) {
-  .li {
+  .header .li {
     margin: 1em 0;
   }
 }
-
-a {
-  margin-bottom: 19em;
-  font-family: monospace;
-  text-decoration: none;
-  color: black;
-  position: relative;
+@media screen and (max-width: 1010px) {
+  .header .li {
+    align-items: center;
+    margin: 1.2em;
+    font-size: small;
+  }
 }
-
-.nav ul li a:hover::before {
+.header .nav .activo ul li a:hover::before {
   content: "";
   bottom: -5px;
   right: 0;
   width: 3rem;
 }
-
-.nav ul li a:hover::after {
+.header .nav .activo ul li a:hover::after {
   content: "";
   bottom: -10px;
   left: 0;
   width: 2rem;
 }
-
-.nav ul li a::before,
-.nav ul li a::after {
-  border-bottom: 3px solid rgb(23, 23, 180);
+.header .nav .activo ul li a::before,
+.header .nav .activo ul li a::after {
+  border-bottom: 4px greenyellow;
   position: absolute;
   translate: 0.2s;
   border-radius: 10px;
 }
-
-#box {
-  padding: 5px;
+.header a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+.header .svg {
+  width: 2em;
+  height: 2em;
+}
+@media screen and (max-width: 480px) {
+  .header .container_icon_button {
+    display: flex;
+  }
+}
+.header #box {
   padding-bottom: 1rem;
 }
 
