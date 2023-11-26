@@ -1,69 +1,60 @@
 @import "./mixin.scss";
- 
+
 .header {
   width: 100%;
   background-color: white;
   font-family: monospace;
-  background-color: beige;
+  padding: 2em;
 
-  @include flex(row, wrap, space-around, center);
-  
+  @include flex(row, wrap, space-between, center);
+
   @include mobile() {
     display: flex;
     justify-content: space-between;
   }
-  
-   #logo_page {
-     width: 8rem;
-     height: 5rem;
+
+  #logo_page {
+    width: 8rem;
+    height: 5rem;
   }
 
-  .buton {
-     background-color: white;
-     display: none;
-     cursor: pointer;
-
-     @include mobile() {
-     display: block;
-      
-    }
+  a {
+    text-decoration: none;
+    color: black;
+    position: relative;
   }
 
   .nav {
     @include mobile() {
       width: 100%;
       display: none;
-    }
 
-    &.click{
-      
-      opacity: 1;
-      pointer-events: auto;
+      &.active {
+        display: flex;
+        @include flex(column, nowrap, center, center);
+      }
     }
   }
 
-  
-
-  .ul {
-  
+  .ul_text {
     @include flex(row, wrap, flex-end, center);
 
     @include mobile() {
       flex-direction: column;
     }
   }
+
   .li {
-    margin: 2.7em;
+    margin: 2.5em;
     list-style: none;
-    
+
     @include mobile() {
       margin: 1em 0;
     }
-    
-    @include tablet() {
-      align-items: center;
-      margin: 1.2em;
-      font-size: small;
+    @media screen and (min-width: 990px) {
+      .li{
+        font-size: small;
+      }
     }
   }
   .nav ul li a:hover::before {
@@ -80,30 +71,28 @@
   }
   .nav ul li a::before,
   .nav ul li a::after {
-    border-bottom: 3px solid #FFE605;
+    border-bottom: 3px solid #ffe605;
     position: absolute;
     translate: 0.2s;
     border-radius: 10px;
   }
 
-  a{
-    text-decoration: none;
-    color: black;
-    position: relative;
+  .buton {
+    background-color: rgb(255, 202, 27);
+    display: none;
+    cursor: pointer;
+
+    @include mobile() {
+      display: block;
+    }
   }
 
-.svg {
+  #svg {
     width: 2em;
     height: 2em;
   }
 
-.container_icon_button{
-  @include mobile() {
-      display: flex;
+  .box_icons {
+    padding-bottom: 1em;
   }
-}
-
-#box {
-  padding-bottom: 1rem;
-}
 }

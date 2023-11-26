@@ -11859,10 +11859,10 @@ textarea.form-control-lg {
   width: 100%;
   background-color: white;
   font-family: monospace;
-  background-color: beige;
+  padding: 2em;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 @media screen and (max-width: 480px) {
@@ -11875,39 +11875,37 @@ textarea.form-control-lg {
   width: 8rem;
   height: 5rem;
 }
-.header .buton {
-  background-color: white;
-  display: none;
-  cursor: pointer;
-}
-@media screen and (max-width: 480px) {
-  .header .buton {
-    display: block;
-  }
+.header a {
+  text-decoration: none;
+  color: black;
+  position: relative;
 }
 @media screen and (max-width: 480px) {
   .header .nav {
     width: 100%;
     display: none;
   }
+  .header .nav.active {
+    display: flex;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
-.header .nav.click {
-  opacity: 1;
-  pointer-events: auto;
-}
-.header .ul {
+.header .ul_text {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
   align-items: center;
 }
 @media screen and (max-width: 480px) {
-  .header .ul {
+  .header .ul_text {
     flex-direction: column;
   }
 }
 .header .li {
-  margin: 2.7em;
+  margin: 2.5em;
   list-style: none;
 }
 @media screen and (max-width: 480px) {
@@ -11915,10 +11913,8 @@ textarea.form-control-lg {
     margin: 1em 0;
   }
 }
-@media screen and (max-width: 1010px) {
-  .header .li {
-    align-items: center;
-    margin: 1.2em;
+@media screen and (min-width: 990px) {
+  .header .li .li {
     font-size: small;
   }
 }
@@ -11936,27 +11932,27 @@ textarea.form-control-lg {
 }
 .header .nav ul li a::before,
 .header .nav ul li a::after {
-  border-bottom: 3px solid #FFE605;
+  border-bottom: 3px solid #ffe605;
   position: absolute;
   translate: 0.2s;
   border-radius: 10px;
 }
-.header a {
-  text-decoration: none;
-  color: black;
-  position: relative;
+.header .buton {
+  background-color: rgb(255, 202, 27);
+  display: none;
+  cursor: pointer;
 }
-.header .svg {
+@media screen and (max-width: 480px) {
+  .header .buton {
+    display: block;
+  }
+}
+.header #svg {
   width: 2em;
   height: 2em;
 }
-@media screen and (max-width: 480px) {
-  .header .container_icon_button {
-    display: flex;
-  }
-}
-.header #box {
-  padding-bottom: 1rem;
+.header .box_icons {
+  padding-bottom: 1em;
 }
 
 /*# sourceMappingURL=style.css.map */
