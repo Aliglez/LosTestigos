@@ -11855,8 +11855,21 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-body {
-  background-color: black;
+* {
+  background-color: white;
+}
+
+.event {
+  background-color: red;
+}
+
+img {
+  width: 10vw;
+  height: 10vh;
+}
+
+h1, .h1 {
+  font-size: small;
 }
 
 /*# sourceMappingURL=style.css.map */
