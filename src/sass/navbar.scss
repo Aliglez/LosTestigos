@@ -26,7 +26,7 @@
 
   .nav {
     @include mobile() {
-      width: 100%;
+      width: 20%;
       display: none;
 
       &.active {
@@ -50,10 +50,11 @@
 
     @include mobile() {
       margin: 1em 0;
-    }
-    @media screen and (min-width: 990px) {
-      .li{
-        font-size: small;
+
+    @include tablet() {
+      align-items: center;
+      margin: 1.2em;
+      font-size: small;
       }
     }
   }
@@ -76,12 +77,24 @@
     translate: 0.2s;
     border-radius: 10px;
   }
+
+  .buton {
+    background-color: rgb(255, 202, 27);
+    display: none;
+    cursor: pointer;
+
+    @include mobile() {
+      display: flex;
+
+    }
+  }
+
   #svg {
     width: 2em;
     height: 2em;
   }
-
-  .box_icons {
-    padding-bottom: 1em;
-  }
 }
+   .box_icons{
+ padding-bottom: 1em;
+}
+
