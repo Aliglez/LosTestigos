@@ -76,17 +76,6 @@
     translate: 0.2s;
     border-radius: 10px;
   }
-
-  .buton {
-    background-color: rgb(255, 202, 27);
-    display: none;
-    cursor: pointer;
-
-    @include mobile() {
-      display: block;
-    }
-  }
-
   #svg {
     width: 2em;
     height: 2em;
