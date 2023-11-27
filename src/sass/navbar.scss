@@ -1,0 +1,103 @@
+@import "./mixin.scss";
+
+.header {
+  width: 100%;
+  background-color: white;
+  font-family: monospace;
+  padding: 2em;
+
+  @include flex(row, wrap, space-between, center);
+
+  @include mobile() {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #logo_page {
+    width: 8rem;
+    height: 5rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+  }
+
+  .nav {
+    @include mobile() {
+      width: 20%;
+      display: none;
+
+      &.active {
+        display: flex;
+        @include flex(column, nowrap, center, center);
+      }
+    }
+  }
+
+  .ul_text {
+    @include flex(row, wrap, flex-end, center);
+
+    @include mobile() {
+      flex-direction: column;
+    }
+  }
+
+  .li {
+    margin: 2.5em;
+    list-style: none;
+
+    @include mobile() {
+      margin: 1em 0;
+
+    @include tablet() {
+      align-items: center;
+      margin: 1.2em;
+      font-size: small;
+      }
+    }
+  }
+  .nav ul li a:hover::before {
+    content: "";
+    bottom: -5px;
+    right: 0;
+    width: 3rem;
+  }
+  .nav ul li a:hover::after {
+    content: "";
+    bottom: -10px;
+    left: 0;
+    width: 2rem;
+  }
+  .nav ul li a::before,
+  .nav ul li a::after {
+    border-bottom: 3px solid #ffe605;
+    position: absolute;
+    translate: 0.2s;
+    border-radius: 10px;
+  }
+
+  .buton {
+    background-color: rgb(255, 202, 27);
+    display: none;
+    cursor: pointer;
+
+    @include mobile() {
+      display: flex;
+
+      &.active {
+        display: none;
+      }
+    }
+  }
+
+  #svg {
+    width: 2em;
+    height: 2em;
+  }
+}
+   .box_icons{
+ padding-bottom: 1em;
+}
+

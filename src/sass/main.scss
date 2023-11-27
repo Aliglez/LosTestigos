@@ -1,0 +1,42 @@
+@import './mixin.scss';
+
+ * {
+    margin: 0;
+
+ }
+
+main {
+    text-align: center;
+}
+#imgBanner {
+    width: 100%; 
+    max-width: 1200px;
+    object-fit: cover;
+    padding: 2em 1em 0;
+
+}
+
+.containText {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: $font-stack;
+    padding: 2% 10%;
+
+    .titleText {
+
+        border-left: 0.5rem solid $yellow;
+        padding: 1rem 2rem;
+        text-align: left;
+    }
+
+    #generalText {
+        text-align: justify;
+        padding: 1 rem 1.5rem;
+        font-weight: bold;
+        margin-top: 1%;
+        
+    }
+    
+
+}
