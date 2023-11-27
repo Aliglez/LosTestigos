@@ -86,6 +86,9 @@
     @include mobile() {
       display: flex;
 
+      &.active {
+        display: none;
+      }
     }
   }
 

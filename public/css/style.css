@@ -11948,6 +11948,9 @@ textarea.form-control-lg {
   .header .buton {
     display: flex;
   }
+  .header .buton.active {
+    display: none;
+  }
 }
 .header #svg {
   width: 2em;
