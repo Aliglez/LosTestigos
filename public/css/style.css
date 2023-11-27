@@ -14,7 +14,7 @@ main {
   width: 100%;
   max-width: 1200px;
   object-fit: cover;
-  padding: 2em 1em 0;
+  padding: 0em 1em 0;
 }
 
 .containText {
@@ -40,7 +40,7 @@ main {
   width: 100%;
   background-color: white;
   font-family: monospace;
-  padding: 2em;
+  padding: 1em;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
