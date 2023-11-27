@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono:wght@300&display=swap');
+
 
 @mixin flex( $dir , $wrap , $just , $align ){
     display: flex;
@@ -17,3 +19,7 @@
       @content
     }
 }
+
+$font-stack: Roboto Mono;
+$yellow: #FFE605;
+
