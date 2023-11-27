@@ -36,6 +36,32 @@ main {
   margin-top: 1%;
 }
 
+.item_box {
+  border: 1px solid black;
+}
+
+img {
+  width: 30vw;
+  height: 50vh;
+}
+
+.event {
+  width: 13em;
+  padding: 1em;
+  background-color: black;
+  color: white;
+}
+
+hr {
+  width: 1.5em;
+}
+
+.icons_secc {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
 .header {
   width: 100%;
   background-color: white;
@@ -11998,33 +12024,5 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-<<<<<<< HEAD
-.item_box {
-  border: 1px solid black;
-}
-
-img {
-  width: 30vw;
-  height: 50vh;
-}
-
-.event {
-  width: 13em;
-  padding: 1em;
-  background-color: black;
-  color: white;
-}
-
-hr {
-  width: 1.5em;
-}
-
-.icons_secc {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-=======
->>>>>>> dev
 
 /*# sourceMappingURL=style.css.map */
