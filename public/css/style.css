@@ -42,7 +42,7 @@ main {
   margin: 25px auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
+  gap: 45px;
 }
 
 #title_prox {
