@@ -1,0 +1,21 @@
+@import './mixin.scss';
+
+.containForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: $font-stack;
+    padding: 2% 10%;
+
+    .titleText {
+
+        border-left: 0.5rem solid $yellow;
+        padding: 1rem 2rem;
+        text-align: left;
+    }
+
+    .formContact {
+        text-align: left;
+        padding-top: 2% ;
+    }
+}
