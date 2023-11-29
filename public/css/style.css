@@ -2,6 +2,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono:wght@300&display=swap");
+.containForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto Mono;
+  padding: 2% 10%;
+}
+.containForm .titleText {
+  border-left: 0.5rem solid #FFE605;
+  padding: 1rem 2rem;
+  text-align: left;
+}
+.containForm .formContact {
+  text-align: left;
+  padding-top: 2%;
+}
+
 * {
   margin: 0;
 }
