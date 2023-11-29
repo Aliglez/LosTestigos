@@ -31,6 +31,9 @@
   padding-top: 3%;
   position: relative;
 }
+.containForm .formContact #exampleFormControlInput2, .containForm .formContact #exampleFormControlInput1 {
+  padding-left: 8%;
+}
 .containForm .formContact .form-label {
   left: 3%;
 }
@@ -43,6 +46,22 @@
   position: absolute;
   left: 2%;
   top: 38%;
+}
+.containForm .formContact #btn-primary {
+  --bs-btn-color: black;
+  --bs-btn-bg:#ffe605;
+  --bs-btn-border-color: $yellow;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #ffe605;
+  --bs-btn-hover-border-color: #ffe605;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #ffe605;
+  --bs-btn-active-border-color: #ffe605;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: $yellow;
+  --bs-btn-disabled-border-color:$yellow;
 }
 
 .containerRight {
@@ -92,7 +111,7 @@ main {
 .header {
   width: 100%;
   background-color: white;
-  font-family: monospace;
+  font-family: Roboto Mono;
   padding: 1em;
   display: flex;
   flex-flow: row wrap;
