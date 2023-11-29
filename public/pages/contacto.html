@@ -82,35 +82,91 @@
     </header>
 
     <main>
-      <img
-        id="imgBanner"
-        src="../assets/img/losTestigoMalabares.png"
-        class="img-fluid"
-        alt="Fotografía del grupo Los testigos"
-      />
+      <div class="mainBody">
+        <div class="containForm">
+          <div class="titleText">
+            <h1 class="title">Contacto</h1>
+          </div>
+          <div class="formContact">
+            <div class="mb-3">
+              <label for="exampleFormControlInput2" class="form-label"
+                >Nombre*</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput2"
+                placeholder="Nombre"
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-user-circle"
+                width="25"
+                height="25"
+                viewBox="0 0 24 24"
+                stroke-width="1"
+                stroke="#FFE605"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                <path
+                  d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"
+                />
+              </svg>
+            </div>
 
-      <article class="containText">
-        <div class="titleText">
-          <h1 id="title">Nosotros</h1>
-        </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Correo electrónico*</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="nombre@ejemplo.com"
+              />
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-opened" width="25" height="25" viewBox="0 0 24 24" stroke-width="1" stroke="#FFE605" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M3 9l9 6l9 -6l-9 -6l-9 6" />
+                <path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+                <path d="M3 19l6 -6" />
+                <path d="M15 13l6 6" />
+              </svg>
+            </div>
 
-        <div id="generalText">
-          <p>
-            Somos el grupo de versiones que estás buscando. Hacemos la mejor
-            música para animar una boda, una fiesta: versiones del pop español
-            de los 80 y también de los 70… Bueno, y de los 90 y de los 2000.
-            Vamos, tocamos todas las canciones que te sabes. Alaska, Los
-            Secretos, Hombres G, El Último de la Fila, Radio Futura, Julio
-            Iglesias… ¡¿Julio también?! ¡Claro, es de nuestro favoritos! ¡Y
-            Raphael! Pero también Los Planetas o Vetusta Morla. Somos omnívoros.
-            Nuestra única regla es que TODOS podáis disfrutar, cantar, bailar,
-            reíros y pasar un rato memorable.
-          </p>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Mensaje*</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+            <input id="btn-primary" class="btn btn-primary" type="submit" value="Enviar" />
+          </div>
         </div>
-      </article>
+        <div class="containerRight">
+          <img
+            id="contactImg"
+            src="../assets/img/lostestigos3.JPG"
+            alt="Los testigos en escena"
+          />
+          <section class="contactText">
+            Mail: lostestigosbbc@gmail.com
+            <br />
+            Teléfonos: 678 724 416 / 637 595 387
+          </section>
+        </div>
+      </div>
     </main>
 
     <footer></footer>
-    <script src="./js/app.js"></script>
+    <script src="../app.js"></script>
   </body>
 </html>

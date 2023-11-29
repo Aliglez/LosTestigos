@@ -2,6 +2,78 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono:wght@300&display=swap");
+.mainBody {
+  width: 100%;
+  display: flex;
+}
+@media screen and (max-width: 480px) {
+  .mainBody {
+    flex-direction: column;
+  }
+}
+
+.containForm {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto Mono;
+  padding: 2% 10%;
+}
+.containForm .titleText {
+  border-left: 0.5rem solid #FFE605;
+  padding: 1rem 2rem;
+  text-align: left;
+}
+.containForm .formContact {
+  text-align: left;
+  padding-top: 3%;
+  position: relative;
+}
+.containForm .formContact #exampleFormControlInput2, .containForm .formContact #exampleFormControlInput1 {
+  padding-left: 8%;
+}
+.containForm .formContact .form-label {
+  left: 3%;
+}
+.containForm .formContact .icon-tabler-user-circle {
+  position: absolute;
+  left: 2%;
+  top: 14.1%;
+}
+.containForm .formContact .icon-tabler-mail-opened {
+  position: absolute;
+  left: 2%;
+  top: 38%;
+}
+.containForm .formContact #btn-primary {
+  --bs-btn-color: #ffe605;
+  --bs-btn-bg:black;
+  --bs-btn-border-color: $yellow;
+  --bs-btn-hover-color: black;
+  --bs-btn-hover-bg: #ffe605;
+  --bs-btn-hover-border-color: #ffe605;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #ffe605;
+  --bs-btn-active-border-color: #ffe605;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: $yellow;
+  --bs-btn-disabled-border-color:$yellow;
+}
+
+.containerRight {
+  padding: 5%;
+}
+.containerRight #contactImg {
+  width: 100%;
+}
+.containerRight .contactText {
+  padding: 10%;
+}
+
 * {
   margin: 0;
 }
@@ -39,7 +111,7 @@ main {
 .header {
   width: 100%;
   background-color: white;
-  font-family: monospace;
+  font-family: Roboto Mono;
   padding: 1em;
   display: flex;
   flex-flow: row wrap;
