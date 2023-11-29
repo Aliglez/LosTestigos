@@ -3,6 +3,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono:wght@300&display=swap");
+.mainBody {
+  width: 100%;
+  display: flex;
+}
+@media screen and (max-width: 480px) {
+  .mainBody {
+    flex-direction: column;
+  }
+}
+
 .containForm {
   width: 100%;
   display: flex;
@@ -17,7 +27,14 @@
 }
 .containForm .formContact {
   text-align: left;
-  padding-top: 2%;
+  padding-top: 3%;
+}
+
+.containerRight {
+  padding: 5%;
+}
+.containerRight #contactImg {
+  width: 100%;
 }
 
 * {
