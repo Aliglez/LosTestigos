@@ -15,6 +15,7 @@
 
 .containForm {
   width: 100%;
+  max-width: 800px;
   display: flex;
   flex-direction: column;
   font-family: Roboto Mono;
@@ -28,6 +29,20 @@
 .containForm .formContact {
   text-align: left;
   padding-top: 3%;
+  position: relative;
+}
+.containForm .formContact .form-label {
+  left: 3%;
+}
+.containForm .formContact .icon-tabler-user-circle {
+  position: absolute;
+  left: 2%;
+  top: 14.1%;
+}
+.containForm .formContact .icon-tabler-mail-opened {
+  position: absolute;
+  left: 2%;
+  top: 38%;
 }
 
 .containerRight {
@@ -35,6 +50,9 @@
 }
 .containerRight #contactImg {
   width: 100%;
+}
+.containerRight .contactText {
+  padding: 10%;
 }
 
 * {
