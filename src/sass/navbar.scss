@@ -99,6 +99,11 @@
   }
 }
    .box_icons{
- padding-bottom: 1em;
+      padding-bottom: 1em;
+      
+      :hover {
+        color: #ffe605;
+        cursor: pointer;
+      }
 }
 
