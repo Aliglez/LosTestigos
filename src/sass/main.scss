@@ -10,7 +10,7 @@ main {
 }
 #imgBanner {
     width: 100%; 
-    max-width: 1200px;
+    max-width: 1000px;
     object-fit: cover;
     padding: 0em 1em 0;
 
@@ -34,6 +34,7 @@ main {
         padding: 1 rem 1.5rem;
         font-weight: bold;
         margin-top: 1%;
+        margin-bottom: 7%;
         
     }
     
@@ -43,13 +44,15 @@ main {
 #footerContainer {
     background-color: black;
     width: 100%;
-    height: 10%;
-    
+    height: 7%;
+    position: fixed;
+    bottom: 0px;
+    @include flex (row, wrap, center, center);
 
     h2 {
         color: white;
         font-family: $font-stack;
         font-size: 1em;
-        @include flex (row, wrap, center, center);
+        
     }
 }
