@@ -2,17 +2,20 @@ miCallBack([
     {
         "autor":"Raphael",
         "cancion":"Mi gran noche",
-        "url":"https://www.youtube.com/watch?v=P79NZJBjxgM"
+        "url":"https://www.youtube.com/embed/VrMUO7bCr6Q?si=dWqlQDrNtyZjUuo9"
+        
     },
     {
         "autor":"Hombres G",
         "cancion":"Sufre mamón",
-        "url":"https://www.youtube.com/watch?v=LgQYPqr9Rho"
+        "url":"https://www.youtube.com/embed/LgQYPqr9Rho?si=hO-59lgt533FPpuW"
+        
     },
     {
         "autor":"El último de la fila",
         "cancion":"Como un burro amarrado en la puerta de un baile",
-        "url":"https://www.youtube.com/watch?v=V0T_6bxb73Q"
-    },
+        "url":"https://www.youtube.com/embed/V0T_6bxb73Q?si=Azw5XJB9lb63MWxl"
+        
+    }
 ]
-)
+);
