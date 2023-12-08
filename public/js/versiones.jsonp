@@ -1,0 +1,18 @@
+miCallBack([
+    {
+        "autor":"Raphael",
+        "cancion":"Mi gran noche",
+        "url":"https://www.youtube.com/watch?v=P79NZJBjxgM"
+    },
+    {
+        "autor":"Hombres G",
+        "cancion":"Sufre mamón",
+        "url":"https://www.youtube.com/watch?v=LgQYPqr9Rho"
+    },
+    {
+        "autor":"El último de la fila",
+        "cancion":"Como un burro amarrado en la puerta de un baile",
+        "url":"https://www.youtube.com/watch?v=V0T_6bxb73Q"
+    },
+]
+)
