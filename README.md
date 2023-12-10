@@ -1,7 +1,8 @@
 # LosTestigos
 
 # INSTALL SASS
-    - npm install  --> to install Sass and Bootstrap
+    - npm install  --> to install Sass
+    - npm i bootstrap@5.3.2 --> to install Bootstrap
 
 
 ## PÁGINA WEB PARA PUBLICITAR EL GRUPO ASTURIANO "LOS TESTIGOS"
