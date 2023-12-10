@@ -7,6 +7,12 @@
 
 ## PÁGINA WEB PARA PUBLICITAR EL GRUPO ASTURIANO "LOS TESTIGOS"
 Se trata de una página web en la que se muestran los aspectos más relevantes del grupo musical, como su historia, sus versiones más destables, vídeos de sus actuaciones y forma de contacto.
+![image](https://github.com/Aliglez/LosTestigos/assets/146745568/f7017509-a52e-4a3c-b32a-cdc869e244cd)
+![image](https://github.com/Aliglez/LosTestigos/assets/146745568/a72c2771-dc75-4c46-b1f2-f09f989227ad)
+![image](https://github.com/Aliglez/LosTestigos/assets/146745568/be40b0c0-12c7-4643-9426-23cb3623da99)
+![image](https://github.com/Aliglez/LosTestigos/assets/146745568/5775b4e2-3b26-4167-8634-fd210fc4d428)
+
+
 
 Nota: los datos sobre próximos eventos y forma de contacto son falsos.
 
