@@ -167,6 +167,125 @@ svg {
   color: yellow;
 }
 
+.main_Galery {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+}
+
+.secc_Galery {
+  padding-left: 5em;
+}
+
+#title_Galery {
+  border-left: 0.5rem solid #FFE605;
+  margin-top: 2em;
+  padding: 0.5rem 2rem;
+  height: 2em;
+}
+
+#carouselExampleIndicators.carousel {
+  height: 20em;
+  max-width: 900px;
+  width: 20em;
+  margin-left: 29em;
+}
+
+h4, .h4 {
+  text-align: center;
+  padding-top: 2em;
+}
+
+.movie_video {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 5em;
+}
+
+.card_animation {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin: 13px 0 0p 13px;
+  background: white(168, 31, 31);
+  overflow: hidden;
+}
+
+.card_animation span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4.5px;
+  border-radius: 3em;
+  background: linear-gradient(to right, transparent, yellow);
+  animation: animate-1 5s linear infinite;
+}
+
+@keyframes animate-1 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.card_animation span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 2em;
+  width: 4.5px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, black);
+  animation: animate-2 5s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animate-2 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+.card_animation span:nth-child(3) {
+  position: absolute;
+  bottom: 2em;
+  left: 0;
+  width: 100%;
+  height: 4.5px;
+  background: linear-gradient(to left, transparent, yellow);
+  animation: animate-3 5s linear infinite;
+}
+
+@keyframes animate-3 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.card_animation span:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 2em;
+  width: 4.5px;
+  height: 100%;
+  background: linear-gradient(to left, transparent, black);
+  animation: animate-4 5s linear infinite;
+}
+
+@keyframes animate-4 {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
 .header {
   width: 100%;
   background-color: white;
