@@ -1,5 +1,6 @@
 # LosTestigos
 
+<<<<<<< HEAD
 # INSTALL SASS
     - npm install  --> to install Sass
     - npm i bootstrap@5.3.2 --> to install Bootstrap
@@ -37,5 +38,11 @@ Nota: los datos sobre próximos eventos y forma de contacto son falsos.
 ### COLABORADORES :family:
 - [Stiven Díaz](https://github.com/stiv-32)
 - [Alicia González](https://github.com/Aliglez)
+=======
+# INSTALL 
+    - npm install   To install Sass and Bootstrap
+
+
+>>>>>>> 2c67cb344fa74d9d8190e82e686fe674eddd66a9
 
     
